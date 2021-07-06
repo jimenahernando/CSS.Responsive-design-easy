@@ -1,0 +1,16 @@
+:root {
+    --clr-primary-200: #f3eed9;
+    --clr-primary-400: #824936;
+    --clr-neutral-100: #fff;
+    --clr-neutral-900: #222c2a;
+  
+    --ff-primary: "Roboto", sans-serif;
+    --ff-accent: "Playfair Display", sans-serif;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
