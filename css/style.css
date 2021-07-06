@@ -17,7 +17,7 @@
 
 body {
   font-family: var(--ff-primary);
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1.3125rem;
   line-height: 1.6;
 }
@@ -33,6 +33,7 @@ p {
 h1,
 h2,
 h3 {
+  color: var(--clr-primary-400);
   font-family: var(--ff-accent);
   font-weight: 900;
   line-height: 1;
@@ -44,9 +45,19 @@ p {
   margin-bottom: 1em;
 }
 
-img{
-    display: block;
-    max-width: 100%;
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.bg-primary img{
+    margin-bottom: 2em;
+}
+
+@media (min-width: 40em) {
+    .bg-primary img{
+        margin-bottom: 0;
+    } 
 }
 
 .text-center {
@@ -55,12 +66,38 @@ img{
 
 header,
 section {
-  padding: 3rem 0;
+  padding: 4rem 0;
+}
+
+@media (min-width: 40em) {
+  header,
+  section {
+    padding: 7rem 0;
+  }
 }
 
 .container {
   margin-inline: auto;
   width: min(90%, 70.5rem);
+}
+
+.split {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 40em) {
+  .split {
+    flex-direction: row;
+  }
+
+  .split > * {
+    flex-basis: 100%;
+  }
+
+  .split > * + * {
+    margin-left: 2em;
+  }
 }
 
 .container--narrow {
